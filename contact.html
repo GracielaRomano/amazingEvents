@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="./assets/img/logoAmazing.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+            rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/d1be60c6dc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logoAmazing.png" alt="Amazing">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item item overflow-hidden">
+                        <a class="nav-link" href="upcoming.html">Upcoming Events</a>
+                    </li>
+                    <li class="nav-item item overflow-hidden">
+                        <a class="nav-link" href="past.html">Past Events</a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-link" href="stats.html">Stats</a>
+                    </li>        
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="banner">
+            <div>
+                <a class="btn fa-solid fa-chevron-left arrow" href="past.html"></a> 
+            </div>
+            <h1 class="title">Contact</h1>
+            <div>
+                <a class="btn fa-solid fa-chevron-right arrow" href="stats.html"></a>
+            </div>
+        </div>
+        <div class="contenedor">
+            <form action="/action_page.php" class="contact-form">
+                <div class="mb-3 mt-3">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name..." name="name">
+                </div>
+                <div class="mb-3 ">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email..." name="email">
+                </div>
+                  <label for="comment">Comments:</label>
+                  <textarea class="form-control" rows="5" id="comment" placeholder="comments here..."  name="text"></textarea>
+                  <button type="submit" class="btn button-form">Send</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <i class="fa-brands fa-square-facebook social"></i>
+            <i class="fa-brands fa-square-instagram social"></i>
+            <i class="fa-brands fa-square-whatsapp social"></i>
+        </div>
+        <div>
+            <h2 class="title-footer">Cohort</h2>
+        </div>
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
