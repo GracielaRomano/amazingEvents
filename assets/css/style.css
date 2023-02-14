@@ -329,8 +329,8 @@ td{
     .search{
         margin: 20px 10px 40px 10px;
     }
-    thead{
-        font-size: 16px;
+    .titulo-th{
+        font-size: 17px;
     }
     td{
         font-size: 12px;
