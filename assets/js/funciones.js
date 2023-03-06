@@ -5,7 +5,8 @@ function createCard(event){
         <div class="card-body">
             <h5 class="card-title">${event.name}</h5>
             <p class="card-textFinal">${event.description}</p>
-            <span class="price">$ ${event.price}</span>  <a href="details.html?id=2" class="btn button">see more</a>
+            <span class="price">$ ${event.price}</span>
+            <a href="details.html?id=${event._id}" class="btn button">see more</a>
         </div>
     </div>`;
     return eventCard;

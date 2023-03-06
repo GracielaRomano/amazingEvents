@@ -3,8 +3,14 @@
     margin: 0;
     padding: 0;
 }
+html{
+    height: 100%;
+}
 body{
     background-color:#e0f2f1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 nav img{
     width: 150px;
@@ -209,7 +215,7 @@ nav img{
 
  .img-event{
     width: 100%;
-    height: 280px;
+    height: 360px;
     margin: 10px;
     border: 1px solid darkslategray;
     box-shadow: 5px 5px 5px rgb(128, 132, 132);
@@ -218,15 +224,18 @@ nav img{
     transform: scaleX(-1);
  }
  .card-event{
-    width: 800px;
-    height: 300px;
-    margin:10rem;
+    width: 100%;
+    height: 380px;
+    margin:7rem 10rem 20rem 1rem;
     border: 2px solid #d40468;
+ }
+ .container{
+    margin-bottom: 5rem;
  }
  .card-bodyEvent{
     border: 1px solid darkslategray;
     margin:10px 10px 10px 25px;
-    height: 280px;
+    height: 360px;
     box-shadow: 5px 5px 5px rgb(128, 132, 132);
  }
  .title-event{
@@ -236,9 +245,25 @@ nav img{
     color: #004949;
     font-weight: 700;
  }
+ .price-event{
+    font-size: 25px;
+    font-weight: bold;
+    color: #004949;
+    text-align: right;
+ }
+ .price-event:hover{
+    font-size: 30px;
+    color: #d40468;
+ }
+ .text{
+    margin:5px;
+ }
  .card-footer{
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     background-color: #caf8e3;
+ }
+ #contenedor{
+    margin-bottom: 10rem;
  }
 
 
@@ -250,9 +275,13 @@ nav img{
     display: flex;
     justify-content: center;
     background-color: #f2f2f2;
-    margin: 10rem 10rem 10rem 25rem;
+    margin-left: 25rem;
+    margin-right: 10rem;
+    margin-bottom:  20rem !important;
+    margin-top: 10rem !important;
     border-radius: 15px;
     border: 1px solid #d40468 ;
+   
 }
 .contact-form{
     width: 700px;
@@ -306,11 +335,7 @@ footer{
     height: 150px;
     background-color: #006666;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    margin-top: 10rem;
+    margin-top: auto;
 }
 .social{
     height: 50px;
@@ -323,7 +348,7 @@ footer{
     font-size: 2rem;
     text-align: center;
     padding: 5px;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 2rem;
     cursor: pointer;
 }
@@ -331,8 +356,12 @@ footer{
     background-color:#d40468;
     border: 4px solid #ebfaf3;
 }
+.social-margin{
+    margin-left: 10rem;
+}
 .title-footer{
-    margin-right: 6rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
 }
 
 /*-----stast------*/
@@ -392,11 +421,17 @@ td{
     footer{
         align-items: center;
         flex-direction: column;
+        height: auto;
+    }
+    .social{
+       margin-left: 3rem;
+       margin-right: 1rem;
     }
     .contenedor{
         height: auto;
         width: 400px;
         margin: 20px;
+        margin-bottom:5rem;
     }
     .img-event{
         width: 370px;
@@ -409,7 +444,9 @@ td{
         margin-top: 2rem;
     }
     .title-footer{
-        margin-right: 0px;
+        text-align: center;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
     }
     .card-home{
         margin: 10px;
@@ -457,7 +494,7 @@ td{
         font-size: 25px;
     }
     .card-event{
-        margin:40px 5px 20px 0px;
+        margin:40px 0px 20px 0px;
         width: 700px;
      }
     .contenedor{
@@ -474,5 +511,8 @@ td{
     .form-check-input{
         
         margin-left: 5px;
-     }
+    }
+    .img-event{
+        width: 100%;
+    }
 }
