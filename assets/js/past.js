@@ -1,19 +1,14 @@
-let htmlEvents = "";
-let cardEvent = document.getElementById("cardEvent");
-let currentDate = new Date(data.currentDate);
+crearListaCategorias();
+mostrarCardSeleccionadas('past');
 
-let countEvents = 0;
-htmlEvents = '<div class="row">';
-for (let event of data.events) {
-    let eventDate = new Date(event.date);
-    if (eventDate < currentDate) {
-        countEvents++;
-        if(countEvents==5){
-            htmlEvents += '</div> <div class="row">';
-            countEvents = 1;
-        }
-        htmlEvents += createCard(event);
+let listCategorias = document.querySelectorAll("#categorias input[type=checkbox]")
+listCategorias.forEach (input =>{
+    input.onclick = () =>{
+        mostrarCardSeleccionadas('past')
     }
-}
-htmlEvents += '</div>';
-cardEvent.innerHTML = htmlEvents;
+})
+
+document.querySelector("#search").onsubmit = (e) =>{
+    e.preventDefault();
+    mostrarCardSeleccionadas('past')
+};

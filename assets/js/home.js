@@ -1,4 +1,4 @@
-let htmlEvents = "";
+/*let htmlEvents = "";
 let cardEvent = document.getElementById("cardEvent");
 
 let countEvents = 0;
@@ -12,4 +12,19 @@ for (let event of data.events) {
     htmlEvents += createCard(event);
 };
 htmlEvents += '</div>';
-cardEvent.innerHTML = htmlEvents;
+cardEvent.innerHTML = htmlEvents;*/
+crearListaCategorias();
+mostrarCardSeleccionadas();
+
+let listCategorias = document.querySelectorAll("#categorias input[type=checkbox]")
+listCategorias.forEach (input =>{
+    input.onclick = () =>{
+        mostrarCardSeleccionadas()
+    }
+})
+
+document.querySelector("#search").onsubmit = (e) =>{
+    e.preventDefault();
+    mostrarCardSeleccionadas()
+};
+

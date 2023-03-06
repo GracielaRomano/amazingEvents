@@ -12,14 +12,17 @@ nav img{
     margin-right: 120px;
 }
 .navbar{
-    background-color: #64ffda;
+    background-color: #006666;
 }
 .navbar-link{
     padding: 3px;
+    color: white !important;
 }
 .navbar-nav{
     font-size: 18px;
     padding: 15px;
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color:white;
 }
 .navbar-collapse{
     flex-grow: 0 !important;
@@ -31,6 +34,7 @@ nav img{
     position: relative;
     font-size: 25px;
     font-weight: 500;
+    
 }
 .item:after{
     content: '';
@@ -50,6 +54,18 @@ nav img{
 }
 .item:hover{
     font-weight: bold;
+}
+.message{
+    text-align: center;
+    color: #d40468;
+    font-weight: bold;
+    border: #004949 1px solid;
+    border-radius: 10px;
+    background-color: #a7ffeb;
+    margin: auto;
+    width: 50%;
+    margin-top: 5rem;
+    padding: 10px;
 }
 
 /*---BANNER----*/
@@ -187,7 +203,7 @@ nav img{
  .form-check-input:hover{
     border:5px solid #d40468;
 }
- 
+
 
  /*-----EVENT----*/
 
@@ -288,7 +304,8 @@ form label{
 footer{
     width: 100%;
     height: 150px;
-    background-color: #64ffda;
+    background-color: #006666;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -405,7 +422,7 @@ td{
         margin: 10px;
     }
     .search{
-        margin: 20px 10px 40px 10px;
+        margin: 20px 10px 40px 20px;
     }
     .titulo-th{
         font-size: 17px;
@@ -419,7 +436,7 @@ td{
     }
     .form-check-input{
         margin-top: 1rem;
-        margin-left: 25px;
+        margin-left: 20px;
      }
 }
 @media  screen and (max-width: 800px)and (min-width: 500px){
@@ -447,10 +464,6 @@ td{
         margin: 30px 30px 30px 60px;
         width: 80%;
     }
-    .form-check-input{
-        
-        margin-left: 10px;
-     }
     .search input{
        height: 50px;
     }
@@ -458,4 +471,8 @@ td{
         height: 50px;
         margin-right: 10px;
     }
+    .form-check-input{
+        
+        margin-left: 5px;
+     }
 }
