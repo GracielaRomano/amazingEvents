@@ -17,18 +17,17 @@ nav img{
     height: auto;
 }
 .navbar{
-    background-color: #006666;
+    background-color: #1de9b6;
     height: 100px;
 }
 .navbar-link{
     padding: 3px;
-    color: white !important;
+    color: #004949 !important;
 }
 .navbar-nav{
     font-size: 18px;
     padding: 15px;
-    --bs-nav-link-color: white;
-    --bs-nav-link-hover-color:white;
+    color: #004949;
 }
 .navbar-collapse{
     flex-grow: 0 !important;
@@ -71,6 +70,7 @@ nav img{
     width: 50%;
     margin-top: 5rem;
     padding: 10px;
+    margin-bottom: 5rem;
 }
 
 /*---BANNER----*/
@@ -78,27 +78,29 @@ nav img{
 .banner{
     width: 100%;
     height: 250px;
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     color: #d40468;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-weight: bold;
 }
 .title{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 .title:hover{
-    color:#004949;
+    color: #caf8e3;
 }
 .arrow{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #d40468;
 }
 .arrow:hover{
-    color:#004949;
-    font-size: 3.2rem;
+    color:#caf8e3;
 }
 .checkbox{
     display: flex;
@@ -120,32 +122,32 @@ nav img{
     cursor: pointer;
 }
 .search input:hover{
-    border: 1px solid darkslategray;
+    border: 1px solid #004949;
     background-color: #acf5d4;
 }
 .glass{
-    background-color: #006666;
+    background-color: #1de9b6;
+    border: 1px solid #004949;
 }
 .glass:hover{
-    border: 1px solid #006666;
-    background-color: #acf5d4;
+    border: 1px solid #004949;
+    background-color: #004949;
 }
 
 /*----CARDS-----*/
 
 .card-home{
     margin:20px 16px 0 16px;
-    width: 22%;
-    margin-top: 6rem;
     position: relative;
     border: 2px solid #d40468;
     box-shadow: 5px 5px 10px rgb(196, 149, 174) inset;
+    margin-top: 3rem;
 }
 .card-image{
     height: 200px;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
+    width: 96%;
+    padding: 5px;
+    margin: 10px 5px 10px 5px;
     box-shadow: 5px 5px 5px rgb(128, 132, 132);
 }
 .card-image:hover{
@@ -162,6 +164,12 @@ nav img{
 }
 .card-textFinal{
     margin-bottom: 70px;
+}
+#cardEvent{
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .price{
     position: absolute;
@@ -226,10 +234,7 @@ nav img{
     width: 100%;
     height: 380px;
     margin:7rem 10rem 20rem 1rem;
-    border: 2px solid #d40468;
- }
- #cardEvent{
-    margin-bottom: 5rem;
+    border: 3px solid #d40468;
  }
  .card-bodyEvent{
     border: 1px solid darkslategray;
@@ -280,7 +285,6 @@ nav img{
     margin-top: 10rem !important;
     border-radius: 15px;
     border: 1px solid #d40468 ;
-   
 }
 .contact-form{
     width: 700px;
@@ -332,8 +336,8 @@ form label{
 footer{
     width: 100%;
     height: 150px;
-    background-color: #006666;
-    color: white;
+    background-color: #1de9b6;
+    color:#004949;
     margin-top: auto;
 }
 .social{
@@ -361,6 +365,7 @@ footer{
 .title-footer{
     margin-right: 1rem;
     margin-top: 3rem;
+    font-weight: bold;
 }
 
 /*-----stast------*/
@@ -456,9 +461,6 @@ td{
     .checkbox{
         flex-direction: column;
     }
-    .category{
-        margin: 10px;
-    }
     .search{
         margin: 20px 10px 40px 20px;
     }
@@ -473,7 +475,7 @@ td{
         margin-right: 10px;
     }
     .form-check-input{
-        margin-top: 1rem;
+        margin-top: 2rem;
         margin-left: 20px;
      }
 }
@@ -515,5 +517,13 @@ td{
     }
     .img-event{
         width: 100%;
+    }
+    .title-footer{
+        text-align: center;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    footer{
+        height: auto;
     }
 }

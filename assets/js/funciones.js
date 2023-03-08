@@ -45,7 +45,7 @@ function mostrarCardSeleccionadas(tipo){
   /** Texto ingresado en la casilla de buscar */
   let textSearch = document.getElementById("textSearch").value.toLowerCase();
 
-  htmlCardResultado = '<div class="row">';
+  htmlCardResultado = '';
   let checked = [];
 
   /* Array de las categorias seleccionadas */
@@ -61,10 +61,6 @@ function mostrarCardSeleccionadas(tipo){
                       
               if (textSearch.length==0 || currentName.includes(textSearch) || currentDescription.includes(textSearch)){
                   countEvents++;
-                  if(countEvents==5){
-                      htmlCardResultado += '</div> <div class="row">';
-                      countEvents = 1;
-                  }
                   htmlCardResultado += createCard(event);
               }
           }
@@ -77,7 +73,6 @@ function mostrarCardSeleccionadas(tipo){
       document.getElementById("NotFound").style.display='none';
   }
   
-  htmlCardResultado += '</div>';
   cardEvent.innerHTML = htmlCardResultado;
 }
 
