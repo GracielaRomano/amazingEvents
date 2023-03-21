@@ -1,3 +1,27 @@
+function fechEvents(typeEvent){
+
+    crearListaCategorias();
+    mostrarCardSeleccionadas(typeEvent);
+
+    let listCategorias = document.querySelectorAll("#categorias input[type=checkbox]")
+    listCategorias.forEach (input =>{
+        input.onclick = () =>{
+            mostrarCardSeleccionadas(typeEvent)
+        }
+    })
+
+    document.querySelector("#search").onsubmit = (e) =>{
+        e.preventDefault();
+        mostrarCardSeleccionadas(typeEvent)
+    };
+    let searchInput = document.querySelector("#textSearch") ;
+
+    searchInput.addEventListener('keyup',(e) => {
+        e.preventDefault();
+        mostrarCardSeleccionadas(typeEvent)
+    })
+}
+
 function createCard(event){
     let eventCard= `
     <div class="card col-ms-12 col-md-6 col-lg-3 card-home">

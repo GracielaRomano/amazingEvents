@@ -1,7 +1,7 @@
 const queryString = location.search;
 const params = new URLSearchParams(queryString);
 const queryID = params.get("id");
-
+console.log(data)
 const evento = data.events.find(event => event._id==queryID);
 
 const card = document.querySelector("#contenedor")
